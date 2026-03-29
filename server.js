@@ -22,7 +22,8 @@ const roadmapRoutes = require('./src/routes/roadmap');
 app.use('/api/auth', authRoutes);
 app.use('/api/quiz', quizRoutes);
 app.use('/api/roadmap', roadmapRoutes);
- app.use('/api/chat', chatRoutes); // Keep commented until we build Option B
+ app.use('/api/chat', chatRoutes);
+ app.use('/api/dashboard', require('./src/routes/dashboard')); // Keep commented until we build Option B
 
 // Basic route to test if server is running
 app.get('/', (req, res) => {
