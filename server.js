@@ -26,8 +26,8 @@ app.use('/api/roadmap', roadmapRoutes);
  app.use('/api/dashboard', require('./src/routes/dashboard')); // Keep commented until we build Option B
 
 // Basic route to test if server is running
-app.get('/', (req, res) => {
-  res.send('FinGPS API is running smoothly...');
+app.get("/", (req, res) => {
+  res.send("Backend is running ");
 });
 
 const PORT = process.env.PORT || 5000;
